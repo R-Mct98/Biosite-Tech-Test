@@ -44,8 +44,8 @@ export class UserMerger {
             return newUser;
         }).reverse();
 
-        const mergedUser: User = Object.assign({}, ...modifiedUsers, {qualifications: storedQualifications});
+         const mergedUser: User = Object.assign({}, ...modifiedUsers, {qualifications: storedQualifications});
 
         return mergedUser;
     }
-}        
+}
